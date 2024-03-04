@@ -8,7 +8,7 @@ import SwiftUI
 import MapKit
 
 struct MapView: UIViewRepresentable {
-    private let center = CLLocationCoordinate2D(latitude: 37.741249, longitude: -25.675594)
+    private let center = CLLocationCoordinate2D(latitude: 37.780411, longitude: -25.497047)
     private let span = MKCoordinateSpan(latitudeDelta: 0.5, longitudeDelta: 0.5)
 
     func makeUIView(context: Context) -> MKMapView {

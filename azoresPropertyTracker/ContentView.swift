@@ -12,7 +12,7 @@ struct ContentView: View {
         VStack {
             MapView() // Add your MapView here
                 .edgesIgnoringSafeArea(.all)
-                .frame(height: 300)
+                .frame(maxHeight: .infinity)
         }
     }
 }
