@@ -10,15 +10,9 @@ import SwiftUI
 struct ContentView: View {
     var body: some View {
         VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundStyle(.tint)
-            Text("Hello, world!")
+            MapView() // Add your MapView here
+                .edgesIgnoringSafeArea(.all)
+                .frame(height: 300)
         }
-        .padding()
     }
-}
-
-#Preview {
-    ContentView()
 }

@@ -18,10 +18,11 @@ struct MapView: UIViewRepresentable {
     func updateUIView(_ uiView: MKMapView, context: Context) {
         let region = MKCoordinateRegion(center: center, span: span)
         uiView.setRegion(region, animated: true)
-        // Prevent the user from moving the map outside of the initial region
+
         uiView.isScrollEnabled = false
         uiView.isZoomEnabled = false
-        uiView.isUserInteractionEnabled = false // Optional: disable all user interaction
+        uiView.isRotateEnabled = false
+        uiView.isUserInteractionEnabled = false
     }
 
     typealias UIViewType = MKMapView
