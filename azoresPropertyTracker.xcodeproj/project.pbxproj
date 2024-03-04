@@ -14,6 +14,7 @@
 		39184D0A2B95AE03009DDB88 /* azoresPropertyTrackerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39184D092B95AE03009DDB88 /* azoresPropertyTrackerTests.swift */; };
 		39184D142B95AE03009DDB88 /* azoresPropertyTrackerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39184D132B95AE03009DDB88 /* azoresPropertyTrackerUITests.swift */; };
 		39184D162B95AE03009DDB88 /* azoresPropertyTrackerUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39184D152B95AE03009DDB88 /* azoresPropertyTrackerUITestsLaunchTests.swift */; };
+		39184D232B95B558009DDB88 /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39184D222B95B558009DDB88 /* MapView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,6 +46,7 @@
 		39184D0F2B95AE03009DDB88 /* azoresPropertyTrackerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = azoresPropertyTrackerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		39184D132B95AE03009DDB88 /* azoresPropertyTrackerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = azoresPropertyTrackerUITests.swift; sourceTree = "<group>"; };
 		39184D152B95AE03009DDB88 /* azoresPropertyTrackerUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = azoresPropertyTrackerUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		39184D222B95B558009DDB88 /* MapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,6 +99,7 @@
 			children = (
 				39184CF72B95AE01009DDB88 /* azoresPropertyTrackerApp.swift */,
 				39184CF92B95AE01009DDB88 /* ContentView.swift */,
+				39184D222B95B558009DDB88 /* MapView.swift */,
 				39184CFB2B95AE03009DDB88 /* Assets.xcassets */,
 				39184CFD2B95AE03009DDB88 /* azoresPropertyTracker.entitlements */,
 				39184CFE2B95AE03009DDB88 /* Preview Content */,
@@ -260,6 +263,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				39184CFA2B95AE01009DDB88 /* ContentView.swift in Sources */,
+				39184D232B95B558009DDB88 /* MapView.swift in Sources */,
 				39184CF82B95AE01009DDB88 /* azoresPropertyTrackerApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -442,7 +446,8 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.codyClifton.azoresPropertyTracker;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = auto;
-				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -480,7 +485,8 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.codyClifton.azoresPropertyTracker;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = auto;
-				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
